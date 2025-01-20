@@ -1,0 +1,4 @@
+App name
+Graph .NET quick start
+Client ID
+b0258dca-e8ac-4216-a991-cd66b527aa4d
