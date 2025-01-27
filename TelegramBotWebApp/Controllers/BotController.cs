@@ -17,7 +17,7 @@ namespace TelegramBotWebApp.Controllers
         private static readonly IValidationDataModel _token = new ValidationDataModel();
         private static readonly TelegramBotClient _botClient = new TelegramBotClient(_token.token);
 
-        private static readonly string CurrencyApiUrl = "https://v6.exchangerate-api.com/v6/26e3acf6b9e08c4da15f2574/latest/UAH";
+        private static readonly string CurrencyApiUrl = "https://v6.exchangerate-api.com/v6/26e3acf6b9e08c4da15f2574/latest/USD";
 
         [HttpPost("webhook")]
         public async Task<ActionResult> Webhook([FromBody] JsonElement updateJson)
@@ -80,7 +80,7 @@ namespace TelegramBotWebApp.Controllers
                 var usdToUah = json.ConversionRates.USD;
                 var usdToGbp = json.ConversionRates.GBP;
                 
-                return $"💵 Current Rates:\n1 UAH = {usdToEur} EUR\n1 USD = {usdToUah} UAH\n1 USD = {usdToGbp} GBP";
+                return $"💵 Current Rates:\n1 USD = {usdToEur} EUR\n1 USD = {usdToUah} UAH\n1 USD = {usdToGbp} GBP";
             }
         }
     }
