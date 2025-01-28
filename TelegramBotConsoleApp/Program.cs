@@ -6,18 +6,23 @@ internal class Program
 {
     static async System.Threading.Tasks.Task Main(string[] args)
     {
-        string token = "7537982814:AAFYxFMnx9Ro6fjJn8YkCcZtNMKYhvN4FIk";
-        var botClient = new TelegramBotClient(token);
+        // string token = "7537982814:AAFYxFMnx9Ro6fjJn8YkCcZtNMKYhvN4FIk";
+        // var botClient = new TelegramBotClient(token);
 
-        var me = await botClient.GetMeAsync();
-        Console.WriteLine($"Hello, I am {me.Username}");
+        // var me = await botClient.GetMeAsync();
+        // Console.WriteLine($"Hello, I am {me.Username}");
 
-        // Start receiving messages
-        botClient.StartReceiving(
-            updateHandler: HandleUpdateAsync,
-            errorHandler: HandleErrorAsync
+        // // Start receiving messages
+        // botClient.StartReceiving(
+        //     updateHandler: HandleUpdateAsync,
+        //     errorHandler: HandleErrorAsync
             
-        );
+        // );
+
+        for (var i = 0; i < 167; i++)
+        {
+            System.Console.WriteLine(i);
+        }
 
         Console.WriteLine("Press any key to exit...");
         Console.ReadKey();

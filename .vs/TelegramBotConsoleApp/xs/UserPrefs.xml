@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{E0D47EF2-373F-4A84-9B2D-0A6533195415}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TelegramBotConsoleApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TelegramBotWebApp PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TelegramBotWebApp/Services/Implementation/Currency/CurrencyChoice.cs">
+    <Files>
+      <File FileName="TelegramBotWebApp/Controllers/BotController.cs" Line="19" Column="54" />
+      <File FileName="TelegramBotWebApp/Program.cs" />
+      <File FileName="TelegramBotWebApp/Views/Menus/CurrencyMenu/CurrencyMenu.cs" Line="1" Column="1" />
+      <File FileName="TelegramBotWebApp/Services/Implementation/Currency/CurrencyChoice.cs" Line="17" Column="11" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TelegramBotConsoleApp" expanded="True">
+            <Node name="TelegramBotWebApp">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Resources" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Implementation" expanded="True">
+                  <Node name="Currency" expanded="True">
+                    <Node name="CurrencyChoice.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Menus" expanded="True">
+                  <Node name="CurrencyMenu" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

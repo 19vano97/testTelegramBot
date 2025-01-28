@@ -6,15 +6,31 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.3.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Cors" Version="2.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="Telegram.Bot" Version="22.0.1" />
+    <PackageReference Include="Telegram.Bot" Version="22.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Logs/" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\MainResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\MainResource.Designer.cs">
+      <DependentUpon>MainResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/Currency/CurrencyButtonResource" />
+  </ItemGroup>
 </Project>
